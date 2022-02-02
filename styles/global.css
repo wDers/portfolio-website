@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    @apply overflow-x-hidden font-system;
+  }
+  header {
+    @apply sticky w-screen min-w-[280px] top-0 z-50 bg-[#ffffff40] backdrop-blur dark:bg-[#ffffff00] px-4;
+  }
+  main {
+    @apply center relative px-8 min-h-[calc(100vh_-_136px)];
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-heading font-bold;
+    @apply leading-[1.2] !important;
+  }
+  h1 {
+    @apply text-3xl;
+  }
+  h2 {
+    @apply text-xl my-2 underline underline-offset-4 decoration-[3px] decoration-[#525252];
+  }
+  h3 {
+    @apply text-lg font-[600];
+  }
+  button {
+    @apply select-none;
+  }
+  p {
+    @apply indent-4 text-justify;
+  }
+  strong {
+    @apply font-semibold;
+  }
+  .center {
+    @apply max-w-[768px] mx-auto;
+  }
+  .link-btn {
+    @apply flex flex-row items-center gap-1 font-semibold bg-primary text-white px-6 py-1.5 rounded-md  transitionall hover:bg-bghover dark:text-text dark:bg-primarydark dark:hover:bg-bgdarkhover;
+  }
+  .contact-btn {
+    @apply font-semibold px-5 py-1.5 rounded-md transition-[background-color] ease-in-out duration-300 decoration-secondary hover:bg-[#e6fffa] hover:underline hover:underline-offset-4 dark:decoration-secondarydark dark:hover:bg-[#2c3839];
+  }
+  .badge {
+    @apply uppercase break-words text-sm font-semibold mr-1 px-1 bg-[#edf2f7] dark:bg-[#3f4044];
+  }
+  .text-underline {
+    @apply text-secondary cursor-pointer hover:underline hover:underline-offset-1 dark:text-secondarydark;
+  }
+  .transitionall {
+    @apply transition-[background] ease-in-out duration-300;
+  }
+  .transition-scale {
+    @apply transition-[transform] ease-in-out duration-300;
+  }
+  .scale {
+    animation: scale 0.15s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0.5);
+    transform-origin: 100% 0%;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: 100% 0%;
+  }
+}
