@@ -57,7 +57,7 @@ function ProjectsPage({ variants }) {
           amount={1}
           src={"/kobold_project.webp"}
           src2={"/kobold_project.webp"}
-          href={"/404"}
+          href={"/kobold"}
           href2={"/404"}
           alt={"A picture of my kobold project."}
           alt2={"A picture of my kobold project."}
