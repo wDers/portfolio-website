@@ -41,7 +41,7 @@ function ProjectsPage({ variants }) {
           src={"/bmi_calculator_project.webp"}
           src2={"/memory_game_project.webp"}
           href={"bmi-calculator"}
-          href2={"memorygame"}
+          href2={"memory-game"}
           alt={"A picture of my bmi calculator project."}
           alt2={"A picture of my memory game project."}
           topText={"BMI Kalkulátor"}
