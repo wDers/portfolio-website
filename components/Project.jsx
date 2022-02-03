@@ -3,8 +3,19 @@ import Link from "next/link";
 import { Header } from "../components";
 import { BiChevronRight } from "react-icons/bi";
 
-function Project({ title, description, stack, link, source, src, alt }) {
-  const items = [{ link: link }, { source: source }];
+function Project({
+  title,
+  description,
+  stack,
+  link,
+  source,
+  src,
+  alt,
+  noSource,
+}) {
+  let items = [{ link: link }, { source: source }];
+
+  if (noSource) items[1].source = "private-code";
 
   return (
     <>
