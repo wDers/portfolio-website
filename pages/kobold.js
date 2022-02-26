@@ -26,7 +26,7 @@ function Kobold({ variants }) {
         width="720"
         height="365"
         className="rounded-xl mt-5"
-      ></img>
+      />
     </motion.div>
   );
 }

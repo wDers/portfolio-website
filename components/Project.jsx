@@ -54,7 +54,7 @@ function Project({
         width="720"
         height="365"
         className="rounded-xl"
-      ></img>
+      />
     </>
   );
 }
