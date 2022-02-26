@@ -13,7 +13,7 @@ function SearchApp({ variants }) {
     >
       <Project
         title="Search Applikáció"
-        description="Egy eltérő design-al ellátott google clone applikáció. A google search api felhasználásával készűlt, amit rapid api-n keresztül vettem igénybe. Ha nem dob ki semmit a keresésre az azt jelenti ,hogy a havi 600 request-es limitet meghaladta az api."
+        description="Egy eltérő design-al ellátott google clone applikáció. A google search api felhasználásával készült, amit rapid api-n keresztül vettem igénybe. Ha nem dob ki semmit a keresésre az azt jelenti ,hogy a havi 600 request-es limitet meghaladta az api."
         stack="Next.js, TailwindCSS, RapidAPI"
         link="https://search-app-wders.vercel.app"
         source="https://github.com/wDers/search-app"
