@@ -71,7 +71,7 @@ function ProjectsPage({ variants }) {
         />
       </section>
       <section className="mt-4">
-        <h2 className="no-underline">Nagyobb projectek</h2>
+        <h2 className="no-underline">Valós projectek</h2>
         <ProjectRow
           amount={1}
           src={"/kobold_project.webp"}
