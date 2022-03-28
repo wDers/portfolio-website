@@ -1,6 +1,7 @@
 import { Layout } from "../components";
 import { AnimatePresence } from "framer-motion";
 import { ThemeProvider } from "next-themes";
+import ThemeContextProvider from "../contexts/ThemeContextProvider";
 import "../styles/global.css";
 
 function MyApp({ Component, pageProps, router }) {
@@ -12,11 +13,13 @@ function MyApp({ Component, pageProps, router }) {
 
   return (
     <ThemeProvider enableSystem={true} attribute="class">
-      <Layout>
-        <AnimatePresence exitBeforeEnter>
-          <Component {...pageProps} key={router.route} variants={variants} />
-        </AnimatePresence>
-      </Layout>
+      <ThemeContextProvider>
+        <Layout>
+          <AnimatePresence exitBeforeEnter>
+            <Component {...pageProps} key={router.route} variants={variants} />
+          </AnimatePresence>
+        </Layout>
+      </ThemeContextProvider>
     </ThemeProvider>
   );
 }
