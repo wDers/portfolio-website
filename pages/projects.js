@@ -31,8 +31,8 @@ function ProjectsPage({ variants }) {
           src2={"/calculator_project.webp"}
           href={"todo"}
           href2={"calculator"}
-          alt={"A picture of my todo project."}
-          alt2={"A picture of my calculator project."}
+          alt={"Kép a todo projectemről."}
+          alt2={"Kép a számológép projectemről."}
           topText={"Todo"}
           bottomText={"Todo applikáció local storage-ban menti a tennivalókat."}
           topText2={"Számológép"}
@@ -45,8 +45,8 @@ function ProjectsPage({ variants }) {
           src2={"/memory_game_project.webp"}
           href={"bmi-calculator"}
           href2={"memory-game"}
-          alt={"A picture of my bmi calculator project."}
-          alt2={"A picture of my memory game project."}
+          alt={"Kép a bmi kalkulátor projectemről."}
+          alt2={"Kép a memória játék projectemről."}
           topText={"BMI Kalkulátor"}
           bottomText={"Kiszámítja a bmi indexet és az ideális testtömeget."}
           topText2={"Memória játék"}
@@ -62,8 +62,8 @@ function ProjectsPage({ variants }) {
           src2={"/search_app_project.webp"}
           href={"/search-app"}
           href2={"/404"}
-          alt={"A picture of my search app project."}
-          alt2={"A picture of my movie watchlist project."}
+          alt={"Kép a search app projectemről."}
+          alt2={"Kép a movie watchlist projectemről."}
           topText={"Search App"}
           bottomText={"Kereső applikáció google search api használatával."}
           topText2={"Movie watchlist"}
@@ -85,8 +85,8 @@ function ProjectsPage({ variants }) {
           }
           href={"/kobold"}
           href2={"/portfolio"}
-          alt={"A picture of my kobold project."}
-          alt2={"A picture of my own portfolio project."}
+          alt={"Kép a kobold projectemről."}
+          alt2={"Kép a portfolio projectemről."}
           topText={"Kobold Pécs"}
           bottomText={"Weboldal és Blog applikáció"}
           topText2={"Walek Ders"}
