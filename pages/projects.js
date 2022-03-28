@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useThemeContext } from "../contexts/ThemeContextProvider";
 import { Header, ProjectRow } from "../components";
 
 function ProjectsPage({ variants }) {
@@ -6,6 +7,8 @@ function ProjectsPage({ variants }) {
     "Itt megtalálhatod az eddigi projectjeimet.",
     "Nehézségi szint szerint vannak szétválogatva.",
   ];
+
+  const { currentTheme } = useThemeContext();
 
   return (
     <motion.div
@@ -73,17 +76,21 @@ function ProjectsPage({ variants }) {
       <section className="mt-4">
         <h2 className="no-underline">Valós projectek</h2>
         <ProjectRow
-          amount={1}
+          amount={2}
           src={"/kobold_project.webp"}
-          src2={"/kobold_project.webp"}
+          src2={
+            currentTheme === "light"
+              ? "/portfolio_project_dark.webp"
+              : "/portfolio_project_light.webp"
+          }
           href={"/kobold"}
-          href2={"/404"}
+          href2={"/portfolio"}
           alt={"A picture of my kobold project."}
-          alt2={"A picture of my kobold project."}
+          alt2={"A picture of my own portfolio project."}
           topText={"Kobold Pécs"}
           bottomText={"Weboldal és Blog applikáció"}
-          topText2={"Mezőszél Óvoda"}
-          bottomText2={"Weboldal"}
+          topText2={"Walek Ders"}
+          bottomText2={"Portfolio weboldal"}
           withHeader
         />
       </section>
