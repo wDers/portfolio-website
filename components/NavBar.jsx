@@ -81,11 +81,7 @@ function NavBar(props) {
           </li>
         ))}
         <li>
-          <a
-            href="https://github.com/wDers/portfolio-website"
-            target="_blank"
-            rel="noopener"
-          >
+          <a href="https://github.com/wDers" target="_blank" rel="noopener">
             <div className="flex flex-row items-center gap-1">
               <AiFillGithub /> Github
             </div>
