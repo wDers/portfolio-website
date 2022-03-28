@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useEffect } from "react";
 import { motion } from "framer-motion";
+import { useThemeContext } from "../contexts/ThemeContextProvider";
 import { Header, ProjectRow } from "../components";
 import { AiFillGithub, AiOutlineMail, AiOutlineDownload } from "react-icons/ai";
 import { BiChevronRight } from "react-icons/bi";
@@ -34,6 +35,8 @@ export default function Home({ variants }) {
     "<strong>Frontend</strong> webfejlesztő vagyok.",
     "Az oldalon megtalálhatóak az eddigi munkáim.",
   ];
+
+  const { currentTheme } = useThemeContext();
 
   return (
     <motion.div
@@ -145,17 +148,21 @@ export default function Home({ variants }) {
       </section>
       <section>
         <ProjectRow
-          amount={1}
+          amount={2}
           src={"/kobold_project.webp"}
-          src2={"/kobold_project.webp"}
+          src2={
+            currentTheme === "light"
+              ? "/portfolio_project_dark.webp"
+              : "/portfolio_project_light.webp"
+          }
           href={"/kobold"}
-          href2={"/404"}
+          href2={"/portfolio"}
           alt={"A picture of my kobold project."}
-          alt2={"A picture of my kindergarten project."}
+          alt2={"A picture of my own portfolio project."}
           topText={"Kobold Pécs"}
           bottomText={"Weboldal és Blog applikáció"}
-          topText2={"Mezőszél Óvoda"}
-          bottomText2={"Weboldal"}
+          topText2={"Walek Ders"}
+          bottomText2={"Portfolio weboldal"}
         />
         <div className="flex justify-center relative bottom-1">
           <a href="/cv.txt" download>
