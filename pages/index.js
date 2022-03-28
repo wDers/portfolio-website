@@ -157,8 +157,8 @@ export default function Home({ variants }) {
           }
           href={"/kobold"}
           href2={"/portfolio"}
-          alt={"A picture of my kobold project."}
-          alt2={"A picture of my own portfolio project."}
+          alt={"Kép a kobold projectemről."}
+          alt2={"Kép a portfolio projectemről."}
           topText={"Kobold Pécs"}
           bottomText={"Weboldal és Blog applikáció"}
           topText2={"Walek Ders"}
