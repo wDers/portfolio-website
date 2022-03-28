@@ -57,13 +57,13 @@ function ProjectsPage({ variants }) {
       <section className="mt-4">
         <h2 className="no-underline">Haladó projectek</h2>
         <ProjectRow
-          amount={1}
+          amount={2}
           src={"/search_app_project.webp"}
-          src2={"/search_app_project.webp"}
+          src2={"/movie_watchlist_project.webp"}
           href={"/search-app"}
-          href2={"/404"}
+          href2={"/movie-watchlist"}
           alt={"Kép a search app projectemről."}
-          alt2={"Kép a movie watchlist projectemről."}
+          alt2={"Illusztráció filmet néző emberekről."}
           topText={"Search App"}
           bottomText={"Kereső applikáció google search api használatával."}
           topText2={"Movie watchlist"}
