@@ -79,8 +79,11 @@ export default function Home({ variants }) {
         <div>
           <h2>Amit szeretek</h2>
           <p>
-            Edzés, Olvasás, <span className="text-underline">Zene</span>, Tech
-            Videó, <span className="text-underline">Film</span>, Podcast
+            Podcast,{" "}
+            <Link href="/movie-watchlist">
+              <span className="text-underline">Film</span>
+            </Link>
+            , Edzés, Könyv, Zene
           </p>
         </div>
         <div className="flex justify-center my-2">
