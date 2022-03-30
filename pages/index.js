@@ -165,7 +165,7 @@ export default function Home({ variants }) {
           bottomText2={"Portfolio weboldal"}
         />
         <div className="flex justify-center relative bottom-1">
-          <a href="/cv.txt" download>
+          <a href="/walek_ders_cv.pdf" download>
             <button aria-label="CV button" className="group link-btn">
               Önéletrajz{" "}
               <span className="group-hover:relative group-hover:scale-125 transition-scale">
