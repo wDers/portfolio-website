@@ -51,6 +51,9 @@
   .text-underline {
     @apply text-secondary cursor-pointer hover:underline hover:underline-offset-1 dark:text-secondarydark;
   }
+  .text-highlight {
+    @apply text-secondary dark:text-secondarydark;
+  }
   .transitionall {
     @apply transition-[background] ease-in-out duration-300;
   }
